@@ -1,0 +1,249 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #eeac00;
+}
+
+.loc {
+    margin-left: 50px;
+}
+
+.ldiv {
+    margin-left: 75%;
+}
+
+.logos {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos li {
+    padding: 5px 15px;
+}
+
+.logos li:hover {
+    color: white;
+}
+
+.navbar {
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navbarimg {
+    margin-top: -30px;
+    width: 160px;
+    height: 130px;
+}
+
+.navbarimg img {
+    width: 100%;
+}
+
+.navlist ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+.navlist ul li a{
+    color: black;
+    text-decoration: none;
+}
+.navlist ul li a:hover{
+    color: #eeac00;
+}
+
+
+@media screen and (max-width:768px) {
+    .top {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 95%;
+        gap: 30px;
+        margin-left: 2.5%;
+        height: auto;
+        background-color: #ee870044;
+        padding-bottom: 50px;
+
+    }
+
+    .navlist ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 80%;
+        gap: 20px;
+        width: auto;
+
+    }
+
+    .navbarimg {
+        margin-top: 10px;
+        /* margin-left: 30%; */
+        width: 160px;
+        height: 130px;
+
+    }
+
+}
+
+.farm{
+    height: 250px;
+    background-color: #000000;
+    color: rgb(187, 68, 25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.farm p{
+    font-size: 80px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+@media screen and (max-width:768px){
+    .farm{
+        height: auto;
+        text-align: center;
+        padding: 30px 0px;
+        width: 95%;
+        margin-left: 2.5%;
+
+    }
+}
+
+.cheesediv{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+.cheesediv1{
+    width: 600px;
+}
+.cheesediv1 h2{
+    font-family: cursive;
+    font-size: 35px;
+}
+.cheesediv1 h3{
+    font-family: cursive;
+    color: #eeac00;
+}
+.cheesediv p{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.cheesediv2 img{
+    height: 100%;
+}
+
+@media screen and (max-width:768px){
+    .cheesediv{
+        display: block;
+        
+        width: 90%;
+        height: auto;
+        margin-left: 5%;
+        margin-top: 40px;
+    }
+    .cheesediv1{
+        width:90%;
+    }
+    .cheesediv2 img{
+        height:300px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer{
+   margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(83, 29, 83, 0.185);
+}
+.footerlogo{
+    height: 80px;
+    width: 160px;
+    background-image: url("/images/hot-pizza-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.footh2{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+.footp{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+.foot p:hover,.footp a:hover{
+    color: #eeac00;
+    
+}
+.footp a{
+    text-decoration: none;
+    color: black;
+}
+
+.last{
+    height: 100px;
+    background-color: #dfb241;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+.last p{
+    padding: 5px;
+}
+
+@media screen and (max-width:768px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .last p{
+        text-align: center;
+    }
+    
+}
